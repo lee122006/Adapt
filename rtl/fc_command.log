@@ -1,0 +1,71 @@
+#@ # 
+#@ # Running fc_shell Version W-2024.09-SP2 for linux64 -- Nov 25, 2024
+#@ # Date:   Fri Jul 10 09:42:39 2026
+#@ # Run by: vlsi@vlsilab.ritchennai.edu.in
+#@ 
+
+vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.logvcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.logInformation: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+fc_shell> vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. rca_4bit.v testbench.v -l comp.logvcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdifc_shell> vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.logvcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-timescale' (CMD-010)
+Error: unknown option '-ntb_opts' (CMD-010)
+Error: ambiguous option '-l' (CMD-011)
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-timescale' (CMD-010)
+Error: unknown option '-ntb_opts' (CMD-010)
+Error: ambiguous option '-l' (CMD-011)
+fc_shell> vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-timescale' (CMD-010)
+Error: unknown option '-ntb_opts' (CMD-010)
+Error: ambiguous option '-l' (CMD-011)
+fc_shell> vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-timescale' (CMD-010)
+Error: unknown option '-ntb_opts' (CMD-010)
+Error: ambiguous option '-l' (CMD-011)
+fc_shell>
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+fc_shell> vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. rca_4bit.v testbench.v -l comp.logvcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdifc_shell> vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.logvcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-timescale' (CMD-010)
+Error: unknown option '-ntb_opts' (CMD-010)
+Error: ambiguous option '-l' (CMD-011)
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-timescale' (CMD-010)
+Error: unknown option '-ntb_opts' (CMD-010)
+Error: ambiguous option '-l' (CMD-011)
+fc_shell> vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-timescale' (CMD-010)
+Error: unknown option '-ntb_opts' (CMD-010)
+Error: ambiguous option '-l' (CMD-011)
+fc_shell> vcs -sverilog -debug_access+all -timescale=1ns/1ns -ntb_opts uvm-1.2 +incdir+. adapt_soc_top.v adapt_soc_top_tb.v -l comp.log
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-sverilog' (CMD-010)
+Error: unknown option '-debug_access+all' (CMD-010)
+Error: unknown option '-timescale' (CMD-010)
+Error: unknown option '-ntb_opts' (CMD-010)
+Error: ambiguous option '-l' (CMD-011)
+fc_shell>

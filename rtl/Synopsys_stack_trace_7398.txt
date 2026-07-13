@@ -1,0 +1,102 @@
+GNU gdb (Rocky Linux) 16.3-3.el9
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Attaching to process 7398
+[New LWP 7415]
+[New LWP 7414]
+[New LWP 7413]
+[New LWP 7403]
+[New LWP 7399]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007fc05b0da1ff in wait4 () from /lib64/libc.so.6
+Missing rpms, try: dnf --enablerepo='*debug*' install libblkid-debuginfo-2.37.4-25.el9.x86_64 glibc-debuginfo-2.34-270.el9_8.x86_64 libxcrypt-compat-debuginfo-4.4.18-3.el9.x86_64 libuuid-debuginfo-2.37.4-25.el9.x86_64 libX11-debuginfo-1.8.12-1.el9.x86_64 libXft-debuginfo-2.3.3-8.el9.x86_64 libcom_err-debuginfo-1.46.5-8.el9.x86_64 krb5-libs-debuginfo-1.21.1-10.el9_8.x86_64 keyutils-libs-debuginfo-1.6.3-1.el9.x86_64 bzip2-libs-debuginfo-1.0.8-11.el9.x86_64 libXext-debuginfo-1.3.4-8.el9.x86_64 libXau-debuginfo-1.0.9-8.el9.x86_64 cyrus-sasl-lib-debuginfo-2.1.27-22.el9_7.x86_64 expat-debuginfo-2.5.0-6.el9_8.1.x86_64 libXrender-debuginfo-0.9.10-16.el9.x86_64 sqlite-libs-debuginfo-3.34.1-10.el9_8.x86_64 libXcomposite-debuginfo-0.4.5-7.el9.x86_64 openssl-libs-debuginfo-3.5.5-4.el9_8.x86_64 libselinux-debuginfo-3.6-3.el9.x86_64 libxcrypt-debuginfo-4.4.18-3.el9.x86_64 glib2-debuginfo-2.68.4-19.el9_8.1.x86_64 graphite2-debuginfo-1.3.14-9.el9.x86_64 pulseaudio-libs-glib2-debuginfo-15.0-3.el9.x86_64 pulseaudio-libs-debuginfo-15.0-3.el9.x86_64 pcre2-debuginfo-10.40-6.el9.x86_64 pcre-debuginfo-8.44-4.el9.x86_64 dbus-libs-debuginfo-1.12.20-8.el9.x86_64 libsndfile-debuginfo-1.0.31-9.el9_8.1.x86_64 systemd-libs-debuginfo-252-67.el9_8.2.rocky.0.1.x86_64 libasyncns-debuginfo-0.8-22.el9.x86_64 gsm-debuginfo-1.0.19-6.el9.x86_64 flac-libs-debuginfo-1.3.3-10.el9_2.1.x86_64 libvorbis-debuginfo-1.3.7-5.el9.x86_64 opus-debuginfo-1.3.1-10.el9.x86_64 libogg-debuginfo-1.3.4-6.el9.x86_64 libcap-debuginfo-2.48-10.el9_7.1.x86_64 libgcrypt-debuginfo-1.10.0-11.el9.x86_64 lz4-libs-debuginfo-1.9.3-5.el9.x86_64 libgpg-error-debuginfo-1.42-5.el9.x86_64 sssd-client-debuginfo-2.9.8-4.el9_8.x86_64
+(gdb) (gdb) 
+Thread 6 (Thread 0x7fc0539ff000 (LWP 7399) "jemalloc_bg_thd"):
+#0  0x00007fc05b0883da in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007fc05b08a9c2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libc.so.6
+#2  0x00007fc061b7aea5 in background_thread_sleep (tsdn=<optimized out>, interval=<optimized out>, info=<optimized out>) at src/background_thread.c:232
+#3  background_work_sleep_once (ind=0, info=<optimized out>, tsdn=<optimized out>) at src/background_thread.c:307
+#4  background_thread0_work (tsd=<optimized out>) at src/background_thread.c:452
+#5  background_work (ind=<optimized out>, tsd=<optimized out>) at src/background_thread.c:490
+#6  background_thread_entry (ind_arg=<optimized out>) at src/background_thread.c:522
+#7  0x000000004fa7033d in SNPSee_d9c72da67e7a1f57e9891545cd875e2719332304182309de ()
+#8  0x00007fc05b08b3f9 in start_thread () from /lib64/libc.so.6
+#9  0x00007fc05b1105d0 in clone3 () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7fc0457ff000 (LWP 7403) "dgcom_exec"):
+#0  0x00007fc05b105aed in select () from /lib64/libc.so.6
+#1  0x000000004ef31d6e in SNPSee_554ec7c90557bab679d871cd58526530 ()
+#2  0x000000004fa7033d in SNPSee_d9c72da67e7a1f57e9891545cd875e2719332304182309de ()
+#3  0x00007fc05b08b3f9 in start_thread () from /lib64/libc.so.6
+#4  0x00007fc05b1105d0 in clone3 () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7fc0447fd000 (LWP 7413) "dgcom_exec"):
+#0  0x00007fc05b1089fd in syscall () from /lib64/libc.so.6
+#1  0x00007fc096567d6c in tbb::detail::r1::futex_wait (comparand=2, futex=0x7fc05af1f4ac) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/semaphore.h:104
+#2  tbb::detail::r1::binary_semaphore::P (this=0x7fc05af1f4ac) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/semaphore.h:290
+#3  0x00007fc096561a48 in tbb::detail::r1::rml::internal::thread_monitor::commit_wait (c=..., this=0x7fc05af1f4a0) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/rml_thread_monitor.h:243
+#4  tbb::detail::r1::rml::private_worker::run (this=0x7fc05af1f480) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/private_server.cpp:274
+#5  tbb::detail::r1::rml::private_worker::thread_routine (arg=0x7fc05af1f480) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/private_server.cpp:221
+#6  0x000000004fa7033d in SNPSee_d9c72da67e7a1f57e9891545cd875e2719332304182309de ()
+#7  0x00007fc05b08b3f9 in start_thread () from /lib64/libc.so.6
+#8  0x00007fc05b1105d0 in clone3 () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7fc044ffe000 (LWP 7414) "dgcom_exec"):
+#0  0x00007fc05b1089fd in syscall () from /lib64/libc.so.6
+#1  0x00007fc096567d6c in tbb::detail::r1::futex_wait (comparand=2, futex=0x7fc05af1f52c) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/semaphore.h:104
+#2  tbb::detail::r1::binary_semaphore::P (this=0x7fc05af1f52c) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/semaphore.h:290
+#3  0x00007fc096561a48 in tbb::detail::r1::rml::internal::thread_monitor::commit_wait (c=..., this=0x7fc05af1f520) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/rml_thread_monitor.h:243
+#4  tbb::detail::r1::rml::private_worker::run (this=0x7fc05af1f500) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/private_server.cpp:274
+#5  tbb::detail::r1::rml::private_worker::thread_routine (arg=0x7fc05af1f500) at /remote/dept5188g/pfurnanz/p4/dgcom_t_dev2/third_party_sw/tbb/oneTBB-2021.5.0/src/tbb/private_server.cpp:221
+#6  0x000000004fa7033d in SNPSee_d9c72da67e7a1f57e9891545cd875e2719332304182309de ()
+#7  0x00007fc05b08b3f9 in start_thread () from /lib64/libc.so.6
+#8  0x00007fc05b1105d0 in clone3 () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7fc042ffa000 (LWP 7415) "dgcom_exec"):
+#0  0x00007fc05b0d5995 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007fc05b0da447 in nanosleep () from /lib64/libc.so.6
+#2  0x00007fc05b0da37e in sleep () from /lib64/libc.so.6
+#3  0x000000004f8e80aa in SNPSee_736c226cc0f9d19c9f03a5b629cc1ac67c55aabab371cb493cbe3cfa24e022212a2bcadfa6af024e0b25b9779f0423a5d122967b11fd1c59 ()
+#4  0x00007fc08f0ee480 in std::execute_native_thread_routine (__p=0x70a91b00) at ../../../../../src/gcc-9.2.0/libstdc++-v3/src/c++11/thread.cc:80
+#5  0x000000004fa7033d in SNPSee_d9c72da67e7a1f57e9891545cd875e2719332304182309de ()
+#6  0x00007fc05b08b3f9 in start_thread () from /lib64/libc.so.6
+#7  0x00007fc05b1105d0 in clone3 () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7fc05b30e000 (LWP 7398) "dgcom_exec"):
+#0  0x00007fc05b0da1ff in wait4 () from /lib64/libc.so.6
+#1  0x00007fc05b04f4b3 in do_system () from /lib64/libc.so.6
+#2  0x000000004fa77fe1 in SNPSee_216f3c2f4c55dbceb170dcb7639b9c2cdd496024a8e266b98132685c735317487fd2aa296d8a7317 ()
+#3  0x000000004fa79b49 in SNPSee_216f3c2f4c55dbceb170dcb7639b9c2cdd496024a8e266b98132685c735317484a021951c8b3b34314fe2ade355c4696 ()
+#4  0x000000004f673f69 in SNPSee_9ea8dbbd5e74784445edf9ed12a0bc4777b489dcaefdb88f6c0991497dfc16a1f1ee4f39216b1e41 ()
+#5  0x000000004f6770a5 in SNPSee_9ea8dbbd5e74784484d3cce2fced02c05a3783bc3b9f8fad49ba3bacacc1ac73ecf347a38534d06f ()
+#6  0x000000004ca8e117 in SNPSee_11b97cddff68b62dc89843a99710a483 ()
+#7  <signal handler called>
+#8  0x0000000054126000 in SNPSee_6e69fbe5cd64cca1c6703629b1e895f8 ()
+#9  0x00000000541218b1 in SNPSee_d37906b5b637f25b ()
+#10 0x000000004ca854a6 in SNPSee_5d373cd896410e630e5be4cb01b4f045 ()
+#11 0x0000000053d439fe in SNPSee_84819e9227b2e0aa9cae34dc8be3b8a5cd8f264d30f37d0c6a8e358e8cb885004984e24a8c4868b7af29ce1919d3f9852683413c29440db55976ece412914bf7aae086d558d8e56cf6aad19cb919f4191408ebcf3080fe7b ()
+#12 0x00000000250b09ce in SNPSee_3ed686e8d4a659b5b71ddd12e447f33917cbb8a33ac076760fc4c1bbbacc2de678ec65c28e5937c601c2ef47280b3679 ()
+#13 0x00000000250aca0d in SNPSee_e52978fb95288b35702010462a2fb7521b19e6c7de02e749f68bb351c5fdf77d77dcb6d7ca3d86dfab86a645dee82a58b2bd32436fe9252678dfa79a3e0c83bf ()
+#14 0x0000000024d12637 in SNPSee_b81f4656f0d7d3ca1b0bca755b60caea2cb50375ef5e9df280c2a7ba1e2ca19f7750e3d580600edd04a01dc4363d697fcd6b18c4d0ab558c ()
+#15 0x000000004f1018d5 in SNPSee_b3a63ca9beb66366a2beecdfa325f5f850e37c16b964335ba934f8a7afefeaf1 ()
+#16 0x000000001395178f in SNPSee_6188b3f9a7e769c7eb2dc22ab181ff5c0260e7bf3c6e6c5b6dd310362dd3e58b19a33122e2a80c1014bca5a076370ba0686492d474ef148ca36ababef5945158a888f7e536545dec88d039942c447aad829ec3c9a13ccf1352c7f068f1dc0d713b949058f841385ce96831542394be36f2ec7e463409336ff9646fa385cc5a553529ff78d8277054cb68eca1e74b2650bc52a0a187546145fe12efa21abc06a8 ()
+#17 0x0000000013954236 in SNPSee_5a24f30b88271223 ()
+#18 0x00007fc05b02a610 in __libc_start_call_main () from /lib64/libc.so.6
+#19 0x00007fc05b02a6c0 in __libc_start_main_impl () from /lib64/libc.so.6
+#20 0x0000000013941029 in SNPSee_d06eed713327be76 ()
+(gdb) Detaching from program: /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/linux64/nwtn/bin/dgcom_exec, process 7398
+[Inferior 1 (process 7398) detached]
+(gdb) 

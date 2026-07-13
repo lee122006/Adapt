@@ -1,0 +1,32 @@
+Command: vcs -sverilog -debug_access+all -timescale=1ns/1ps +incdir+. tb/adapt_soc_top_tb.v \
+rtl/adapt_soc_top.v rtl/spi_slave.v rtl/activity_monitor.v rtl/mode_fsm.v rtl/fir_filter.v \
+rtl/clock_gating_cell.v rtl/tiny_ml_mac_4way.v rtl/uart_tx.v -l comp.log
+                         Chronologic VCS (TM)
+       Version W-2024.09-SP2_Full64 -- Fri Jul 10 09:48:10 2026
+
+                    Copyright (c) 1991 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Error-[SFCOR] Source file cannot be opened
+  Source file "tb/adapt_soc_top_tb.v" cannot be opened for reading due to 'No 
+  such file or directory'.
+  Please fix above issue and compile again.
+  
+  
+
+1 error
+CPU time: .081 seconds to compile

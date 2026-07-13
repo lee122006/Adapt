@@ -1,0 +1,30 @@
+set search_path [list . /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/syn_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/sim_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/libraries/syn ] 
+analyze -f verilog  "/home/vlsi/Adapt/rtl/mode_fsm.v" 
+C/home/vlsi/Adapt/rtl
+/home/vlsi/Adapt/rtl/mode_fsm.v
+mode_fsm
+set search_path [list . /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/syn_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/sim_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/libraries/syn ] 
+analyze -f verilog  "/home/vlsi/Adapt/rtl/fir_filter.v" 
+C/home/vlsi/Adapt/rtl
+/home/vlsi/Adapt/rtl/fir_filter.v
+fir_filter
+set search_path [list . /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/syn_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/sim_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/libraries/syn ] 
+analyze -f verilog  "/home/vlsi/Adapt/rtl/clock_gating_cell.v" 
+C/home/vlsi/Adapt/rtl
+/home/vlsi/Adapt/rtl/clock_gating_cell.v
+clock_gating_cell
+set search_path [list . /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/syn_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/sim_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/libraries/syn ] 
+analyze -f verilog  "/home/vlsi/Adapt/rtl/tiny_ml_mac_4way.v" 
+C/home/vlsi/Adapt/rtl
+/home/vlsi/Adapt/rtl/tiny_ml_mac_4way.v
+tiny_ml_mac_4way
+set search_path [list . /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/syn_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/sim_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/libraries/syn ] 
+analyze -f verilog  "/home/vlsi/Adapt/rtl/tiny_ml_mac_4way.v" 
+C/home/vlsi/Adapt/rtl
+/home/vlsi/Adapt/rtl/tiny_ml_mac_4way.v
+tiny_ml_mac_4way
+set search_path [list . /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/syn_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/dw/sim_ver /home/vlsi/Synopsys/Synopsys_install/Fusion_Compiler/fusioncompiler/W-2024.09-SP2/libraries/syn ] 
+analyze -f verilog  "/home/vlsi/Adapt/rtl/urat_tx.v" 
+C/home/vlsi/Adapt/rtl
+/home/vlsi/Adapt/rtl/urat_tx.v
+uart_tx
