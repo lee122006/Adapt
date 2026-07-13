@@ -1,0 +1,23 @@
+# 1. Read the Verilog
+read_verilog pwm.v
+
+# 2. High-Level Synthesis (The 'Nuclear' Option)
+# This replaces proc, opt, fsm, memory, and techmap in one go
+synth -top pwm_controller
+
+# 3. Map Arithmetic and Comparators
+# This forces $add and $lt to become logic gates
+alumacc
+maccmap
+opt
+
+# 4. Map to Nangate45 Physical Cells
+dfflibmap -liberty /home/lee/OpenROAD/test/Nangate45/Nangate45_typ.lib
+abc -liberty /home/lee/OpenROAD/test/Nangate45/Nangate45_typ.lib
+
+# 5. Final Structural Scrub
+clean -purge
+
+# 6. Write a "Physical-Only" Verilog file
+write_verilog -noexpr -noattr pwm_netlist.v
+
